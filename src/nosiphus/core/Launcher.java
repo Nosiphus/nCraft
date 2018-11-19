@@ -61,8 +61,11 @@ public class Launcher {
 		class downloadListener implements ActionListener {
 			public void actionPerformed(ActionEvent e)
 			{	
+				String username = System.getProperty("user.name");
+				String directory = "C:\\Users\\" + username + "\\Desktop\\";
+				
 		        String fromFile = "https://www.nosiphus.com/minecraft/modpacks/telkit/6.6.0.txt";
-		        String toFile = "C:\\Users\\Sean\\Desktop\\windows\\6.6.0.txt";
+		        String toFile = directory + "6.6.0.txt";
 				
 		        try {
 
