@@ -1,0 +1,1 @@
+This is a placeholder to represent where nCraft.exe or nCraft.app will be located inside the nCraft folder directory.
