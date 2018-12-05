@@ -2,6 +2,7 @@ package nosiphus.core;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -21,6 +22,11 @@ public class Launcher {
 		
 		//Buttons
 		
+			//Check for Updates Button
+			JButton checkUpdates = new JButton("Check for Updates");
+			checkUpdates.setBounds(360, 200, 100, 30);
+			checkUpdates.addActionListener(new updateListener());
+			
 			//Download Button
 			JButton download = new JButton("Download");
 			download.setBounds(760, 460, 100, 30);
@@ -56,6 +62,14 @@ public class Launcher {
 	}
 	
 	//Button Operations
+	
+		//Check for Updates Button
+		class updateListener implements ActionListener {
+			public void actionPerformed(ActionEvent e)
+			{
+				
+			}
+		}
 	
 		//Download Button
 		class downloadListener implements ActionListener {
