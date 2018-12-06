@@ -8,10 +8,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.util.Scanner;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class Launcher {
 	
@@ -24,7 +26,7 @@ public class Launcher {
 		
 			//Check for Updates Button
 			JButton checkUpdates = new JButton("Check for Updates");
-			checkUpdates.setBounds(360, 200, 100, 30);
+			checkUpdates.setBounds(600, 460, 140, 30);
 			checkUpdates.addActionListener(new updateListener());
 			
 			//Download Button
@@ -40,8 +42,12 @@ public class Launcher {
 		//End Buttons
 		
 		//Button Tooltips
+		checkUpdates.setToolTipText("Checks for updates.");
 		download.setToolTipText("Download updates.");
 		exit.setToolTipText("Exits nCraft.");
+		
+		//Dropdown Lists
+		String[] modpackList = {"telkit", "telkit-classic", "nosiphus-required-mods" };
 		
 		//Icons
 		ImageIcon jack = new ImageIcon("nosiphus/gui/jack.png");
@@ -50,6 +56,7 @@ public class Launcher {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Window Contents
+		frame.add(checkUpdates);
 		frame.add(download);
 		frame.add(exit);
 		
@@ -78,8 +85,14 @@ public class Launcher {
 				String username = System.getProperty("user.name");
 				String directory = "C:\\Users\\" + username + "\\Desktop\\";
 				
-		        String fromFile = "https://www.nosiphus.com/minecraft/modpacks/telkit/6.6.0.txt";
-		        String toFile = directory + "6.6.0.txt";
+				String modpack;
+				modpack = JOptionPane.showInputDialog(frame,"What modpack will you be installing?");
+				
+				String versionNumber;
+				versionNumber = JOptionPane.showInputDialog(frame, "Enter version number:");
+				
+		        String fromFile = "https://www.nosiphus.com/minecraft/modpacks/" + modpack + "/" + versionNumber + ".txt";
+		        String toFile = directory + versionNumber + ".txt";
 				
 		        try {
 
