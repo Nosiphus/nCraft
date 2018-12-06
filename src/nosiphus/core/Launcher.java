@@ -13,6 +13,7 @@ import java.util.Scanner;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class Launcher {
@@ -21,6 +22,8 @@ public class Launcher {
 	
 	Launcher() {
 		frame = new JFrame("nCraft");
+		ImageIcon jack = new ImageIcon("jack.png");
+		JLabel label = new JLabel(jack);
 		
 		//Buttons
 		
@@ -49,13 +52,11 @@ public class Launcher {
 		//Dropdown Lists
 		String[] modpackList = {"telkit", "telkit-classic", "nosiphus-required-mods" };
 		
-		//Icons
-		ImageIcon jack = new ImageIcon("nosiphus/gui/jack.png");
-		
 		//Window Operations
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Window Contents
+		frame.add(label);
 		frame.add(checkUpdates);
 		frame.add(download);
 		frame.add(exit);
