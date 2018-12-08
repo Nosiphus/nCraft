@@ -4,22 +4,11 @@ import java.awt.*;
 import javax.swing.*;
 import ncraft.core.buttons.*;
 
-public class Window {
-	
-	public class OSDetection {   
-	    public void windows(String[] args) {          
-	        String os = System.getProperty("os.name");        
-	        if(os.contains("Windows")) {  
-	            System.out.println("nCraft is running on Windows.");  
-	        }else  
-	            System.out.println("nCraft requires Windows.");
-	        	System.exit(0);
-	    }  
-	}  
+public class Launcher {
 	
 	JFrame launcher;
 	
-	Window() {
+	Launcher() {
 		launcher = new JFrame("nCraft");
 		ImageIcon jack = new ImageIcon("/ncraft/images/jack.png");
 		JLabel label = new JLabel(jack);
@@ -28,43 +17,65 @@ public class Window {
 			
 			//Download
 			JButton download = new JButton("Download");
-			download.setBounds(760, 460, 100, 30);
 			download.addActionListener(new DownloadListener());
+			download.setBounds(760, 460, 100, 30);
 			download.setToolTipText("Download updates.");
 			
 			//Login
 			JButton login = new JButton("Login");
-			login.setBounds(870, 460, 70, 30);
 			login.addActionListener(new LoginListener());
+			login.setBounds(870, 460, 70, 30);
 			login.setToolTipText("Will eventually log player into Minecraft.");
 			
 			//Options
 			JButton options = new JButton("Options");
-			options.setBounds(660, 460, 90, 30);
 			options.addActionListener(new OptionsListener());
+			options.setBounds(660, 460, 90, 30);
 			options.setToolTipText("Opens Options Menu.");
 		
 		//End Buttons
+			
+		//Text Boxes
+			
+			//Password
+			JPasswordField password = new JPasswordField();
+			password.setBounds(660, 425, 280, 25);
+			password.setToolTipText("Password");
+			
+			//Username
+			JTextField username = new JTextField();
+			username.setBounds(660, 390, 280, 25);
+			username.setToolTipText("Username");
+			
+		//End Text Boxes
 		
 		//Window Contents
 		launcher.add(label);
 		launcher.add(download);
 		launcher.add(login);
+		launcher.add(password);
 		launcher.add(options);
+		launcher.add(username);
 		
 		//Window Operations
 		launcher.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Window Layout
-		launcher.setSize(960,540);
-		launcher.setResizable(false);
-		launcher.setLayout(null);
-		launcher.setVisible(true);
 		launcher.setIconImage(jack.getImage());
+		launcher.setLayout(null);
+		launcher.setResizable(false);
+		launcher.setSize(960,540);
+		launcher.setVisible(true);
+		
+		//Window Location
+		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+		int x = (int) ((dimension.getWidth() - launcher.getWidth()) / 2);
+		int y = (int) ((dimension.getHeight() - launcher.getHeight()) / 2);
+		launcher.setLocation(x, y);
 	}
 	
 	public static void main(String[] args)
 	{
-		new Window();
+		new Launcher();
 	}
 }
