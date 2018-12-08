@@ -92,7 +92,7 @@ public class Launcher {
 				String versionNumber;
 				versionNumber = JOptionPane.showInputDialog(frame, "Enter version number:");
 				
-		        String fromFile = "https://www.nosiphus.com/minecraft/modpacks/" + modpack + "/" + versionNumber + ".txt";
+		        String fromFile = "https://www.nosiphus.com/minecraft/modpacks/" + modpack + "/updates/" + versionNumber + ".txt";
 		        String toFile = directory + versionNumber + ".txt";
 				
 		        try {
