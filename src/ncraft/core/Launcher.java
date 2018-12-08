@@ -8,10 +8,20 @@ public class Launcher {
 	
 	JFrame launcher;
 	
+	/** Returns an ImageIcon, or null if the path was invalid. */
+	protected ImageIcon createImageIcon(String path,
+	                                           String description) {
+	    java.net.URL imgURL = getClass().getResource(path);
+	    if (imgURL != null) {
+	        return new ImageIcon(imgURL, description);
+	    } else {
+	        System.err.println("Couldn't find file: " + path);
+	        return null;
+	    }
+	}
+	
 	Launcher() {
 		launcher = new JFrame("nCraft");
-		ImageIcon jack = new ImageIcon("/ncraft/images/jack.png");
-		JLabel label = new JLabel(jack);
 		
 		//Buttons
 			
@@ -34,7 +44,15 @@ public class Launcher {
 			options.setToolTipText("Opens Options Menu.");
 		
 		//End Buttons
+		
+		//Images
 			
+			ImageIcon icon = createImageIcon("../images/logo.png", "nCraft");
+			JLabel logo = new JLabel(icon);
+			logo.setBounds(400, -10, 550, 250);
+			
+		//End Images
+		
 		//Text Boxes
 			
 			//Password
@@ -50,9 +68,9 @@ public class Launcher {
 		//End Text Boxes
 		
 		//Window Contents
-		launcher.add(label);
 		launcher.add(download);
 		launcher.add(login);
+		launcher.add(logo);
 		launcher.add(password);
 		launcher.add(options);
 		launcher.add(username);
@@ -61,7 +79,6 @@ public class Launcher {
 		launcher.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Window Layout
-		launcher.setIconImage(jack.getImage());
 		launcher.setLayout(null);
 		launcher.setResizable(false);
 		launcher.setSize(960,540);
