@@ -1,6 +1,11 @@
 package ncraft.core;
 
 import java.awt.*;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import javax.swing.*;
 import ncraft.core.buttons.*;
 
@@ -22,6 +27,13 @@ public class Launcher {
 	
 	Launcher() {
 		launcher = new JFrame("nCraft");
+		
+		//Base Operations
+		
+			String user = System.getProperty("user.home");
+			String directory = user + "/nCraft/";
+		
+		//End Base Operations
 		
 		//Buttons
 			
