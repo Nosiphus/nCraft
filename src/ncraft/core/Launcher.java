@@ -29,7 +29,7 @@ public class Launcher {
 	public static String directory = user + File.separator + "nCraft" + File.separator;
 	public static String cache = directory + "cache" + File.separator;
 	
-	Launcher() {
+	public Launcher() {
 		launcher = new JFrame("nCraft");
 		
 		//Base Operations

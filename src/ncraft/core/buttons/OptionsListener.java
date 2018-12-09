@@ -16,11 +16,12 @@ public class OptionsListener implements ActionListener {
 		
 			//Login Information
 			JRadioButton logininformation = new JRadioButton("Remember login information");
-			logininformation.addActionListener(new LoginInformationListener());
+			logininformation.addItemListener(new LoginInformationListener());
 			logininformation.setBounds(50, 100, 200, 30);
 		
 			//Save
 			JButton save = new JButton("Save");
+			save.addActionListener(new SaveListener());
 			save.setBounds(210, 320, 70, 30);
 			
 		//End Buttons
