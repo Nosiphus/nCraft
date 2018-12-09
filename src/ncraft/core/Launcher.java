@@ -25,13 +25,16 @@ public class Launcher {
 	    }
 	}
 	
+	public static String user = System.getProperty("user.home");
+	public static String directory = user + File.separator + "nCraft" + File.separator;
+	public static String cache = directory + "cache" + File.separator;
+	
 	Launcher() {
 		launcher = new JFrame("nCraft");
 		
 		//Base Operations
-		
-			String user = System.getProperty("user.home");
-			String directory = user + "/nCraft/";
+			
+			new File(cache).mkdirs();
 		
 		//End Base Operations
 		
