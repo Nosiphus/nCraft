@@ -29,6 +29,9 @@ public class Launcher {
 	public static String directory = user + File.separator + "nCraft" + File.separator;
 	public static String cache = directory + "cache" + File.separator;
 	
+	public static JPasswordField password = new JPasswordField();
+	public static JTextField username = new JTextField();
+	
 	public Launcher() {
 		launcher = new JFrame("nCraft");
 		
@@ -71,12 +74,10 @@ public class Launcher {
 		//Text Boxes
 			
 			//Password
-			JPasswordField password = new JPasswordField();
 			password.setBounds(660, 425, 280, 25);
 			password.setToolTipText("Password");
 			
 			//Username
-			JTextField username = new JTextField();
 			username.setBounds(660, 390, 280, 25);
 			username.setToolTipText("Username");
 			
