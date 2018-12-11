@@ -2,6 +2,12 @@ package ncraft.core;
 
 import java.awt.*;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import javax.swing.*;
 import ncraft.core.buttons.*;
 
@@ -21,15 +27,44 @@ public class Launcher {
 	    }
 	}
 	
-	public static String user = System.getProperty("user.home");
-	public static String directory = user + File.separator + "nCraft" + File.separator;
+	public static String directory = System.getProperty("user.home") + File.separator + "nCraft" + File.separator;
 	public static String cache = directory + "cache" + File.separator;
 	
 	public static JPasswordField password = new JPasswordField();
 	public static JTextField username = new JTextField();
 	
-	public Launcher() {
+	public Launcher() throws IOException {
 		launcher = new JFrame("nCraft");
+		
+		//Base Operations
+		
+			//Create Cache Folder
+			new File(cache).mkdirs();
+			
+			//Create Default Properties
+			Properties defaultProps = new Properties();
+			FileInputStream in = new FileInputStream("defaultProperties");
+			defaultProps.load(in);
+			in.close();
+			
+				//Default Properties
+				defaultProps.setProperty("user", "");
+				defaultProps.setProperty("pass", "");
+			
+			//Create Application Properties
+			Properties applicationProps = new Properties(defaultProps);
+			
+			//Load Properties
+			in = new FileInputStream("appProperties");
+			applicationProps.load(in);
+			in.close();
+			
+			//Save Properties
+			FileOutputStream out = new FileOutputStream("appProperties");
+			applicationProps.store(out, "---No Comment---");
+			out.close();
+		
+		//End Base Operations
 		
 		//Buttons
 			
@@ -65,10 +100,12 @@ public class Launcher {
 			
 			//Password
 			password.setBounds(660, 425, 280, 25);
+			password.setText(applicationProps.getProperty("pass"));
 			password.setToolTipText("Password");
 			
 			//Username
 			username.setBounds(660, 390, 280, 25);
+			username.setText(applicationProps.getProperty("user"));
 			username.setToolTipText("Username");
 			
 		//End Text Boxes
@@ -97,7 +134,7 @@ public class Launcher {
 		launcher.setLocation(x, y);
 	}
 	
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
 		new Launcher();
 	}
