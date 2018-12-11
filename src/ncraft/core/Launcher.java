@@ -33,6 +33,13 @@ public class Launcher {
 	public static JPasswordField password = new JPasswordField();
 	public static JTextField username = new JTextField();
 	
+	Properties defaultProps = new Properties();
+	FileInputStream in = new FileInputStream(cache + "appProperties.txt");
+	
+	Properties applicationProps = new Properties(defaultProps);
+	
+	
+	
 	public Launcher() throws IOException {
 		launcher = new JFrame("nCraft");
 		
@@ -42,12 +49,9 @@ public class Launcher {
 			new File(cache).mkdirs();
 			
 			//Create Property Files
-			new File(cache + "defaultProperties.txt").createNewFile();
 			new File(cache + "appProperties.txt").createNewFile();
 			
-			//Create Default Properties
-			Properties defaultProps = new Properties();
-			FileInputStream in = new FileInputStream(cache + "defaultProperties.txt");
+			//Load Default Properties
 			defaultProps.load(in);
 			in.close();
 			
@@ -55,11 +59,7 @@ public class Launcher {
 				defaultProps.setProperty("user", "");
 				defaultProps.setProperty("pass", "");
 			
-			//Create Application Properties
-			Properties applicationProps = new Properties(defaultProps);
-			
-			//Load Properties
-			in = new FileInputStream(cache + "appProperties.txt");
+			//Load Application Properties
 			applicationProps.load(in);
 			in.close();
 			
