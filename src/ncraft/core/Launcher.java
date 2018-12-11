@@ -41,9 +41,13 @@ public class Launcher {
 			//Create Cache Folder
 			new File(cache).mkdirs();
 			
+			//Create Property Files
+			new File(cache + "defaultProperties.txt").createNewFile();
+			new File(cache + "appProperties.txt").createNewFile();
+			
 			//Create Default Properties
 			Properties defaultProps = new Properties();
-			FileInputStream in = new FileInputStream("defaultProperties");
+			FileInputStream in = new FileInputStream(cache + "defaultProperties.txt");
 			defaultProps.load(in);
 			in.close();
 			
@@ -55,13 +59,13 @@ public class Launcher {
 			Properties applicationProps = new Properties(defaultProps);
 			
 			//Load Properties
-			in = new FileInputStream("appProperties");
+			in = new FileInputStream(cache + "appProperties.txt");
 			applicationProps.load(in);
 			in.close();
 			
 			//Save Properties
-			FileOutputStream out = new FileOutputStream("appProperties");
-			applicationProps.store(out, "---No Comment---");
+			FileOutputStream out = new FileOutputStream(cache + "appProperties.txt");
+			applicationProps.store(out, null);
 			out.close();
 		
 		//End Base Operations
