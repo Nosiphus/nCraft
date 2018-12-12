@@ -3,7 +3,6 @@ package ncraft.core;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -33,13 +32,6 @@ public class Launcher {
 	public static JPasswordField password = new JPasswordField();
 	public static JTextField username = new JTextField();
 	
-	Properties defaultProps = new Properties();
-	FileInputStream in = new FileInputStream(cache + "appProperties.txt");
-	
-	Properties applicationProps = new Properties(defaultProps);
-	
-	
-	
 	public Launcher() throws IOException {
 		launcher = new JFrame("nCraft");
 		
@@ -49,23 +41,21 @@ public class Launcher {
 			new File(cache).mkdirs();
 			
 			//Create Property Files
-			new File(cache + "appProperties.txt").createNewFile();
+			new File(cache + "application.txt").createNewFile();
 			
-			//Load Default Properties
-			defaultProps.load(in);
+			//Load Properties
+			Properties application = new Properties();
+			FileInputStream in = new FileInputStream(cache + "application.txt");
+			application.load(in);
 			in.close();
 			
-				//Default Properties
-				defaultProps.setProperty("user", "");
-				defaultProps.setProperty("pass", "");
-			
-			//Load Application Properties
-			applicationProps.load(in);
-			in.close();
+				//Properties
+				application.setProperty("user", "");
+				application.setProperty("pass", "");
 			
 			//Save Properties
-			FileOutputStream out = new FileOutputStream(cache + "appProperties.txt");
-			applicationProps.store(out, null);
+			FileOutputStream out = new FileOutputStream(cache + "application.txt");
+			application.store(out, "");
 			out.close();
 		
 		//End Base Operations
@@ -104,12 +94,12 @@ public class Launcher {
 			
 			//Password
 			password.setBounds(660, 425, 280, 25);
-			password.setText(applicationProps.getProperty("pass"));
+			password.setText(application.getProperty("pass"));
 			password.setToolTipText("Password");
 			
 			//Username
 			username.setBounds(660, 390, 280, 25);
-			username.setText(applicationProps.getProperty("user"));
+			username.setText(application.getProperty("user"));
 			username.setToolTipText("Username");
 			
 		//End Text Boxes
