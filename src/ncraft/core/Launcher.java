@@ -49,10 +49,6 @@ public class Launcher {
 			application.load(in);
 			in.close();
 			
-				//Properties
-				application.setProperty("user", "");
-				application.setProperty("pass", "");
-			
 			//Save Properties
 			FileOutputStream out = new FileOutputStream(cache + "application.txt");
 			application.store(out, "");
