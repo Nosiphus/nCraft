@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.swing.*;
@@ -91,7 +92,9 @@ public class Launcher {
 			JLabel logo = new JLabel(icon);
 			logo.setBounds(400, -10, 550, 250);
 			
-		//End Images
+		//End Images	
+			
+		//End Scroll Boxes
 		
 		//Text Boxes
 			
