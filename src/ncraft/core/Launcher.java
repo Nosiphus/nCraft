@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Properties;
 
 import javax.swing.*;
@@ -58,6 +59,12 @@ public class Launcher {
 		
 		//Buttons
 			
+			//Add Pack
+			JButton addpack = new JButton("Add Pack");
+			addpack.addActionListener(new AddPackListener());
+			addpack.setBounds(560, 460, 90, 30);
+			addpack.setToolTipText("Adds a new pack.");
+			
 			//Download
 			JButton download = new JButton("Download");
 			download.addActionListener(new DownloadListener());
@@ -101,6 +108,7 @@ public class Launcher {
 		//End Text Boxes
 		
 		//Window Contents
+		launcher.add(addpack);
 		launcher.add(download);
 		launcher.add(login);
 		launcher.add(logo);
