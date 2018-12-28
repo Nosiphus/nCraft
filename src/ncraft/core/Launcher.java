@@ -37,14 +37,18 @@ public class Launcher {
 		launcher = new JFrame("nCraft");
 		
 		//Base Operations
+		System.out.println("nCraft is running on " + System.getProperty("os.name") + ".");
+		System.out.println("OS version number is " + System.getProperty("os.version") + ".");
 		
 			//Create Folders
 			new File(cache).mkdirs();
 			new File(settings).mkdirs();
+			System.out.println("Directory structure created.");
 			
 			//Create Property Files
 			new File(settings + "login.txt").createNewFile();
 			new File(settings + "ram.txt").createNewFile();
+			System.out.println("Property files created.");
 			
 			//Preference Loader
 			
@@ -56,6 +60,7 @@ public class Launcher {
 				FileOutputStream loginStore = new FileOutputStream(settings + "login.txt");
 				login.store(loginStore, "");
 				loginStore.close();
+				System.out.println("Login settings loaded.");
 				
 				//RAM
 				Properties ram = new Properties();
@@ -65,16 +70,11 @@ public class Launcher {
 				FileOutputStream ramStore = new FileOutputStream(settings + "ram.txt");
 				ram.store(ramStore, "");
 				ramStore.close();
+				System.out.println("Memory settings loaded.");
 				
 		//End Base Operations
 		
 		//Buttons
-			
-			//Add Pack
-			JButton addpack = new JButton("Add Pack");
-			addpack.addActionListener(new AddPackListener());
-			addpack.setBounds(560, 460, 90, 30);
-			addpack.setToolTipText("Adds a new pack.");
 			
 			//Download
 			JButton download = new JButton("Download");
@@ -121,7 +121,6 @@ public class Launcher {
 		//End Text Boxes
 		
 		//Window Contents
-		launcher.add(addpack);
 		launcher.add(download);
 		launcher.add(logo);
 		launcher.add(options);

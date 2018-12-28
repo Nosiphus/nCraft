@@ -155,8 +155,7 @@ public class OptionsListener implements ActionListener {
 				BufferedReader reader = new BufferedReader(new FileReader(login));
 				String line = reader.readLine();
 			
-				while (line != null)
-				{
+				while (line != null) {
 					line = reader.readLine();
 					if (line.startsWith("user=")) {
 						line = "";
