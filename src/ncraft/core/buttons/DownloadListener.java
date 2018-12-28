@@ -43,7 +43,7 @@ public class DownloadListener implements ActionListener {
 		
 		String fromFile = "https://www.nosiphus.com/minecraft/modpacks/" + modpack + "/updates/" + version + ".txt";
 		new File(Launcher.cache + File.separator + modpack + File.separator).mkdirs();
-		String toFile = packfolder + File.separator + "cache" + File.separator + version + ".txt";
+		String toFile = packfolder + "cache" + File.separator + version + ".txt";
 		
 		try {
 			URL website = new URL(fromFile);
@@ -56,10 +56,10 @@ public class DownloadListener implements ActionListener {
 			f.printStackTrace();
 		}
 		
-		downloader(toFile);
+		downloader(packfolder, toFile);
 	}
 
-	public void downloader(String toFile) {
+	public void downloader(String packfolder, String toFile) {
 		
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(toFile));
@@ -68,7 +68,19 @@ public class DownloadListener implements ActionListener {
 			while (line != null) {
 				line = reader.readLine();
 				if (line.contains("https://")) {
-					System.out.println(line.substring(line.indexOf('=')+1));;
+					String location = packfolder + "mods" + File.separator + (line.substring(0, line.indexOf("="))) + ".jar";
+					String mod = line.substring(line.indexOf('=')+1);
+					
+					try {
+						URL website = new URL(mod);
+						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+						FileOutputStream fos = new FileOutputStream(location);
+						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+						fos.close();
+						rbc.close();
+					} catch (IOException f) {
+						f.printStackTrace();
+					}
 				}
 			}
 			reader.close();
