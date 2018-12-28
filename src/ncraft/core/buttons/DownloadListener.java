@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
@@ -73,12 +74,14 @@ public class DownloadListener implements ActionListener {
 					
 					try {
 						URL website = new URL(mod);
-						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+						HttpURLConnection con = (HttpURLConnection) (website.openConnection());
+						System.setProperty("http.agent","");
+						con.setRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
+						ReadableByteChannel rbc = Channels.newChannel(con.getInputStream());
 						FileOutputStream fos = new FileOutputStream(location);
-						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+						fos.getChannel().transferFrom(rbc,0,1 << 24);
 						fos.close();
-						rbc.close();
-					} catch (IOException f) {
+						} catch (IOException f) {
 						f.printStackTrace();
 					}
 				}
