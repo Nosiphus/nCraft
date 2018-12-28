@@ -5,8 +5,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Map;
 import java.util.Properties;
 
 import javax.swing.*;
@@ -30,6 +28,7 @@ public class Launcher {
 	
 	public static String directory = System.getProperty("user.home") + File.separator + "nCraft" + File.separator;
 	public static String cache = directory + "cache" + File.separator;
+	public static String settings = directory + "settings" + File.separator;
 	
 	public static JPasswordField password = new JPasswordField();
 	public static JTextField username = new JTextField();
@@ -39,23 +38,34 @@ public class Launcher {
 		
 		//Base Operations
 		
-			//Create Cache Folder
+			//Create Folders
 			new File(cache).mkdirs();
+			new File(settings).mkdirs();
 			
 			//Create Property Files
-			new File(cache + "application.txt").createNewFile();
+			new File(settings + "login.txt").createNewFile();
+			new File(settings + "ram.txt").createNewFile();
 			
-			//Load Properties
-			Properties application = new Properties();
-			FileInputStream in = new FileInputStream(cache + "application.txt");
-			application.load(in);
-			in.close();
+			//Preference Loader
 			
-			//Save Properties
-			FileOutputStream out = new FileOutputStream(cache + "application.txt");
-			application.store(out, "");
-			out.close();
-		
+				//Login
+				Properties login = new Properties();
+				FileInputStream loginLoad = new FileInputStream(settings + "login.txt");
+				login.load(loginLoad);
+				loginLoad.close();
+				FileOutputStream loginStore = new FileOutputStream(settings + "login.txt");
+				login.store(loginStore, "");
+				loginStore.close();
+				
+				//RAM
+				Properties ram = new Properties();
+				FileInputStream ramLoad = new FileInputStream(settings + "ram.txt");
+				ram.load(ramLoad);
+				ramLoad.close();
+				FileOutputStream ramStore = new FileOutputStream(settings + "ram.txt");
+				ram.store(ramStore, "");
+				ramStore.close();
+				
 		//End Base Operations
 		
 		//Buttons
@@ -72,17 +82,17 @@ public class Launcher {
 			download.setBounds(760, 460, 100, 30);
 			download.setToolTipText("Download updates.");
 			
-			//Login
-			JButton login = new JButton("Login");
-			login.addActionListener(new LoginListener());
-			login.setBounds(870, 460, 70, 30);
-			login.setToolTipText("Will eventually log player into Minecraft.");
-			
 			//Options
 			JButton options = new JButton("Options");
 			options.addActionListener(new OptionsListener());
 			options.setBounds(660, 460, 90, 30);
 			options.setToolTipText("Opens Options Menu.");
+			
+			//Play
+			JButton play = new JButton("Play");
+			play.addActionListener(new PlayListener());
+			play.setBounds(870, 460, 70, 30);
+			play.setToolTipText("Will eventually log player into Minecraft.");
 		
 		//End Buttons
 		
@@ -100,12 +110,12 @@ public class Launcher {
 			
 			//Password
 			password.setBounds(660, 425, 280, 25);
-			password.setText(application.getProperty("pass"));
+			password.setText(login.getProperty("pass"));
 			password.setToolTipText("Password");
 			
 			//Username
 			username.setBounds(660, 390, 280, 25);
-			username.setText(application.getProperty("user"));
+			username.setText(login.getProperty("user"));
 			username.setToolTipText("Username");
 			
 		//End Text Boxes
@@ -113,10 +123,10 @@ public class Launcher {
 		//Window Contents
 		launcher.add(addpack);
 		launcher.add(download);
-		launcher.add(login);
 		launcher.add(logo);
-		launcher.add(password);
 		launcher.add(options);
+		launcher.add(password);
+		launcher.add(play);
 		launcher.add(username);
 		
 		//Window Operations

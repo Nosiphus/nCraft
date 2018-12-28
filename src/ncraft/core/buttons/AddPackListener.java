@@ -10,7 +10,6 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JOptionPane;
-
 import ncraft.core.Launcher;
 
 public class AddPackListener implements ActionListener {
@@ -18,7 +17,7 @@ public class AddPackListener implements ActionListener {
 		
 		String modpack;
 		modpack = JOptionPane.showInputDialog("What modpack will you be installing?");
-		
+	
 		String packfolder = Launcher.directory + "environments" + File.separator + modpack + File.separator;
 		
 		//Directory Creation
