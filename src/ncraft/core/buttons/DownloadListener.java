@@ -56,15 +56,11 @@ public class DownloadListener implements ActionListener {
 			f.printStackTrace();
 		}
 		
-		downloader();
+		downloader(toFile);
 	}
-	
-	String modpack;
-	String version;
-	String packfolder = Launcher.directory + "environments" + File.separator + modpack + File.separator;
-	String toFile = packfolder + File.separator + "cache" + File.separator + version + ".txt";
 
-	public void downloader() {
+	public void downloader(String toFile) {
+		
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(toFile));
 			String line = reader.readLine();
@@ -72,7 +68,7 @@ public class DownloadListener implements ActionListener {
 			while (line != null) {
 				line = reader.readLine();
 				if (line.contains("https://")) {
-					System.out.println(line.replaceAll(".*?=", ""));
+					System.out.println(line.substring(line.indexOf('=')+1));;
 				}
 			}
 			reader.close();
