@@ -1,6 +1,8 @@
 package ncraft.core;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -46,31 +48,44 @@ public class Launcher {
 			System.out.println("Directory structure created.");
 			
 			//Create Property Files
+			new File(settings + "installed.txt").createNewFile();
 			new File(settings + "login.txt").createNewFile();
 			new File(settings + "ram.txt").createNewFile();
 			System.out.println("Property files created.");
 			
-			//Preference Loader
+				//Preference Loader
 			
-				//Login
-				Properties login = new Properties();
-				FileInputStream loginLoad = new FileInputStream(settings + "login.txt");
-				login.load(loginLoad);
-				loginLoad.close();
-				FileOutputStream loginStore = new FileOutputStream(settings + "login.txt");
-				login.store(loginStore, "");
-				loginStore.close();
-				System.out.println("Login settings loaded.");
+					//Installed
+					Properties installed = new Properties();
+					FileInputStream installedLoad = new FileInputStream(settings + "installed.txt");
+					installed.load(installedLoad);
+					installedLoad.close();
+					FileOutputStream installedStore = new FileOutputStream(settings + "installed.txt");
+					installed.store(installedStore, "");
+					installedStore.close();
+					System.out.println("Installed packs loaded.");
+			
+					//Login
+					Properties login = new Properties();
+					FileInputStream loginLoad = new FileInputStream(settings + "login.txt");
+					login.load(loginLoad);
+					loginLoad.close();
+					FileOutputStream loginStore = new FileOutputStream(settings + "login.txt");
+					login.store(loginStore, "");
+					loginStore.close();
+					System.out.println("Login settings loaded.");
 				
-				//RAM
-				Properties ram = new Properties();
-				FileInputStream ramLoad = new FileInputStream(settings + "ram.txt");
-				ram.load(ramLoad);
-				ramLoad.close();
-				FileOutputStream ramStore = new FileOutputStream(settings + "ram.txt");
-				ram.store(ramStore, "");
-				ramStore.close();
-				System.out.println("Memory settings loaded.");
+					//RAM
+					Properties ram = new Properties();
+					FileInputStream ramLoad = new FileInputStream(settings + "ram.txt");
+					ram.load(ramLoad);
+					ramLoad.close();
+					FileOutputStream ramStore = new FileOutputStream(settings + "ram.txt");
+					ram.store(ramStore, "");
+					ramStore.close();
+					System.out.println("Memory settings loaded.");
+				
+				//End Preference Loader
 				
 		//End Base Operations
 		
@@ -92,7 +107,7 @@ public class Launcher {
 			JButton options = new JButton("Options");
 			options.addActionListener(new OptionsListener());
 			options.setBounds(660, 460, 90, 30);
-			options.setToolTipText("Opens Options Menu.");
+			options.setToolTipText("Opens the Options Pane.");
 			
 			//Play
 			JButton play = new JButton("Play");
@@ -110,16 +125,15 @@ public class Launcher {
 			
 		//End Images	
 			
-		//Lists
+		//Scroll Contents
 			
-			String packs[] = { "Telkit", "Telkit Classic", "Tekkit" };
-			JList installed = new JList<Object>(packs);
+			//We will add this once we have constructed the installed packs list.
 			
-		//End Lists
+		//End Scroll Contents
 			
 		//Scroll Panes
 			
-			JScrollPane packLister = new JScrollPane(installed);
+			JScrollPane packLister = new JScrollPane();
 			packLister.setBounds(20, 20, 200, 100);
 			packLister.setToolTipText("Displays all installed modpacks.");
 			
