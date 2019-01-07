@@ -82,6 +82,12 @@ public class Launcher {
 			download.setBounds(760, 460, 100, 30);
 			download.setToolTipText("Download updates.");
 			
+			//Open Directory
+			JButton openDirectory = new JButton("Open Directory");
+			openDirectory.addActionListener(new OpenDirectoryListener());
+			openDirectory.setBounds(520, 460, 130, 30);
+			openDirectory.setToolTipText("Opens nCraft installation directory.");
+			
 			//Options
 			JButton options = new JButton("Options");
 			options.addActionListener(new OptionsListener());
@@ -136,6 +142,7 @@ public class Launcher {
 		//Window Contents
 		launcher.add(download);
 		launcher.add(logo);
+		launcher.add(openDirectory);
 		launcher.add(options);
 		launcher.add(packLister);
 		launcher.add(password);
