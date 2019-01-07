@@ -104,7 +104,20 @@ public class Launcher {
 			
 		//End Images	
 			
-		//End Scroll Boxes
+		//Lists
+			
+			String packs[] = { "Telkit", "Telkit Classic", "Tekkit" };
+			JList installed = new JList<Object>(packs);
+			
+		//End Lists
+			
+		//Scroll Panes
+			
+			JScrollPane packLister = new JScrollPane(installed);
+			packLister.setBounds(20, 20, 200, 100);
+			packLister.setToolTipText("Displays all installed modpacks.");
+			
+		//End Scroll Panes
 		
 		//Text Boxes
 			
@@ -124,6 +137,7 @@ public class Launcher {
 		launcher.add(download);
 		launcher.add(logo);
 		launcher.add(options);
+		launcher.add(packLister);
 		launcher.add(password);
 		launcher.add(play);
 		launcher.add(username);
