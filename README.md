@@ -1,2 +1,2 @@
-# nCraft
-The custom launcher written by Nosiphus to load its modpacks. Very, very early stages.
+# optifinder
+Designed for modpack authors who want to make sure their users install OptiFine before using the packs.
