@@ -52,16 +52,6 @@ public class Window extends JDialog {
 		
 		buttonPane.add(openDirectory);
 		
-		JButton close = new JButton("Close");
-		close.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent g) {
-				FMLCommonHandler.instance().exitJava(0, false);
-			}
-		});
-		
-		buttonPane.add(close);
 		getContentPane().add(buttonPane, BorderLayout.SOUTH);
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		pack();
@@ -70,7 +60,7 @@ public class Window extends JDialog {
 	}
 	
 	public static void main(String version) {
-		Window window = new Window(new JFrame(), "Install OptiFine", "Your browser has been opened to download OptiFine_" + version + ".jar. Run the installer and extract the OptiFine_" + version + "_MOD.jar to this pack's mods directory and delete any previous versions. Set the mods folder file to be read-only.", version);
+		Window window = new Window(new JFrame(), "Install OptiFine", "You do not have the present version of OptiFine. Read the instructions on the page for how to add it.", version);
 	}
 	
 }

@@ -58,7 +58,7 @@ public class ScanModsFolder {
 	
 	public static void downloader(String version) {
 		try {
-			String page = "https://optifine.net/adloadx?f=OptiFine_" + version + ".jar";
+			String page = "https://www.nosiphus.com/minecraft/optifinder/1.12.2.html";
 			
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 				Desktop.getDesktop().browse(new URI(page));
