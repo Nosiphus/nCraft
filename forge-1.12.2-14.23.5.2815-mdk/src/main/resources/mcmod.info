@@ -1,0 +1,16 @@
+[
+{
+  "modid": "optifinder",
+  "name": "OptiFinder",
+  "description": "This mod will make sure that your users install OptiFine.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [""],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

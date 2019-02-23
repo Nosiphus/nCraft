@@ -1,0 +1,19 @@
+****************************
+ Powered By MCP:            
+ http://mcp.ocean-labs.de/  
+ Searge, ProfMobius, Fesh0r,
+ R4wk, ZeuX, IngisKahn      
+ MCP Data version : unknown
+****************************
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+The setupDecompWorkspace will only work with Java 7! This is fixed in ForgeGradle 1.2
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 18.101 secs
