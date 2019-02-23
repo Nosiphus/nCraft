@@ -1,0 +1,229 @@
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Forge Mod Loader version 6.99.19.964 for Minecraft 1.6.4 loading
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_202, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_202
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Java classpath at launch is C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\bin;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.minecraft\launchwrapper\1.8\jar\d4c0895977dd7f0b3f56281cee53a64d4c0c0322\launchwrapper-1.8.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.ow2.asm\asm-debug-all\4.1\jar\dd6ba5c392d4102458494e29f54f70ac534ec2a2\asm-debug-all-4.1.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-library\2.10.2\jar\6ba65d12cd09d441083262d6f73d2257fec7c663\scala-library-2.10.2.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-compiler\2.10.2\jar\64c8b1380cc53d6850823d6e4e7ae984aa44ef9c\scala-compiler-2.10.2.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.sf.jopt-simple\jopt-simple\4.5\jar\6065cc95c661255349c1d0756657be17c29a4fd3\jopt-simple-4.5.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\lzma\lzma\0.0.1\jar\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\codecjorbis\20101023\jar\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\codecwav\20101023\jar\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\libraryjavasound\20101123\jar\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\librarylwjglopenal\20100824\jar\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\soundsystem\20120107\jar\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl\2.9.0\jar\5654d06e61a1bba7ae1e7f5233e1106be64c91cd\lwjgl-2.9.0.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl_util\2.9.0\jar\a778846b64008fc7f48ead2377f034e547991699\lwjgl_util-2.9.0.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\argo\argo\2.25_fixed\jar\751761ce15a3e3aaf3fc75b9f013ff8f7b88a585\argo-2.25_fixed.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.sourceforge.argo\argo\2.25\jar\751761ce15a3e3aaf3fc75b9f013ff8f7b88a585\argo-2.25.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.bouncycastle\bcprov-jdk15on\1.47\jar\b6f5d9926b0afbde9f4dbe3db88c5247be7794bb\bcprov-jdk15on-1.47.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.google.guava\guava\14.0\bundle\67b7be4ee7ba48e4828a42d6d5069761186d4a53\guava-14.0.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.apache.commons\commons-lang3\3.1\jar\905075e6c80f206bbe6cf1e809d2caa69f420c76\commons-lang3-3.1.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\commons-io\commons-io\2.4\jar\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput\2.0.5\jar\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jutils\jutils\1.0.0\jar\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.google.code.gson\gson\2.2.2\jar\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\2ba5dcb11048147f1a74eff2deb192c001321f77\lwjgl-platform-2.9.0-natives-linux.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\6621b382cb14cc409b041d8d72829156a87c31aa\lwjgl-platform-2.9.0-natives-osx.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\3f11873dc8e84c854ec7c5a8fd2e869f8aaef764\lwjgl-platform-2.9.0-natives-windows.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar;C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-reflect\2.10.2\jar\444ff8e89a81697997ed8a98a4642ba283130249\scala-reflect-2.10.2.jar;C:\Users\Sean\.gradle\caches\minecraft\net\minecraftforge\forge\1.6.4-9.11.1.964\forge-1.6.4-9.11.1.964-mcp.jar
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Java library path at launch is C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives;C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\build\natives
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Instantiating coremod class FMLCorePlugin
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Enqueued coremod FMLCorePlugin
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Instantiating coremod class FMLForgePlugin
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Enqueued coremod FMLForgePlugin
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] All fundamental core mods are successfully located
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Discovering coremods
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Examining for coremod candidacy legacyjavafixer-1.0.jar
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Loading tweaker net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer from legacyjavafixer-1.0.jar
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Loading tweak class name net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Tweaker: cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker@368239c8
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Replacing tweaker cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker@368239c8 with net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer$SortReplacement@9e89d68
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Tweaker: FMLCorePlugin {[]}
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Tweaker: FMLForgePlugin {[]}
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Tweaker: cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker@368239c8
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Replacing tweaker cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker@368239c8 with net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer$SortReplacement@9e89d68
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer$SortReplacement
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] [LegacyJavaFixer] Replacing sort
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer$SortReplacement
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class net.minecraftforge.lex.legacyjavafixer.LegacyJavaFixer
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+2019-02-23 14:46:40 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.AccessTransformer
+2019-02-23 14:46:40 [INFO] [STDOUT] Loaded 40 rules from AccessTransformer config file fml_at.cfg
+2019-02-23 14:46:40 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+2019-02-23 14:46:40 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Injection complete
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2019-02-23 14:46:40 [SEVERE] [ForgeModLoader] The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+2019-02-23 14:46:40 [SEVERE] [ForgeModLoader] The minecraft jar file:/C:/Users/Sean/.gradle/caches/minecraft/net/minecraftforge/forge/1.6.4-9.11.1.964/forge-1.6.4-9.11.1.964-mcp.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
+2019-02-23 14:46:40 [SEVERE] [ForgeModLoader] FML has been ordered to ignore the invalid or missing minecraft certificate. This is very likely to cause a problem!
+2019-02-23 14:46:40 [SEVERE] [ForgeModLoader] Technical information: ClientBrandRetriever was at jar:file:/C:/Users/Sean/.gradle/caches/minecraft/net/minecraftforge/forge/1.6.4-9.11.1.964/forge-1.6.4-9.11.1.964-mcp.jar!/net/minecraft/client/ClientBrandRetriever.class, there were 0 certificates for it
+2019-02-23 14:46:40 [SEVERE] [ForgeModLoader] FML appears to be missing any signature data. This is not a good thing
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Coremod plugin class FMLCorePlugin run successfully
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+2019-02-23 14:46:40 [FINEST] [ForgeModLoader] Registering transformer net.minecraftforge.transformers.ForgeAccessTransformer
+2019-02-23 14:46:40 [INFO] [STDOUT] Loaded 110 rules from AccessTransformer config file forge_at.cfg
+2019-02-23 14:46:40 [FINEST] [ForgeModLoader] Registering transformer net.minecraftforge.transformers.EventTransformer
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Injection complete
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Coremod plugin class FMLForgePlugin run successfully
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Validating minecraft
+2019-02-23 14:46:40 [FINE] [ForgeModLoader] Minecraft validated, launching...
+2019-02-23 14:46:40 [INFO] [ForgeModLoader] Launching wrapped minecraft {net.minecraft.client.main.Main}
+2019-02-23 14:46:41 [INFO] [Minecraft-Client] Setting user: Player466
+2019-02-23 14:46:41 [INFO] [Minecraft-Client] LWJGL Version: 2.9.0
+2019-02-23 14:46:42 [INFO] [Minecraft-Client] Reloading ResourceManager: Default
+2019-02-23 14:46:42 [INFO] [MinecraftForge] Attempting early MinecraftForge initialization
+2019-02-23 14:46:42 [INFO] [STDOUT] MinecraftForge v9.11.1.964 Initialized
+2019-02-23 14:46:42 [INFO] [ForgeModLoader] MinecraftForge v9.11.1.964 Initialized
+2019-02-23 14:46:42 [INFO] [STDOUT] Replaced 112 ore recipies
+2019-02-23 14:46:42 [INFO] [MinecraftForge] Completed early MinecraftForge initialization
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] No config directory found, creating one: C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\eclipse\config
+2019-02-23 14:46:42 [INFO] [ForgeModLoader] Config directory created successfully
+2019-02-23 14:46:42 [INFO] [ForgeModLoader] Reading custom logging properties from C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\eclipse\config\logging.properties
+2019-02-23 14:46:42 [OFF] [ForgeModLoader] Logging level for ForgeModLoader logging is set to ALL
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related directory at C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\bin, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.minecraft\launchwrapper\1.8\jar\d4c0895977dd7f0b3f56281cee53a64d4c0c0322\launchwrapper-1.8.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.ow2.asm\asm-debug-all\4.1\jar\dd6ba5c392d4102458494e29f54f70ac534ec2a2\asm-debug-all-4.1.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-library\2.10.2\jar\6ba65d12cd09d441083262d6f73d2257fec7c663\scala-library-2.10.2.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-compiler\2.10.2\jar\64c8b1380cc53d6850823d6e4e7ae984aa44ef9c\scala-compiler-2.10.2.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.sf.jopt-simple\jopt-simple\4.5\jar\6065cc95c661255349c1d0756657be17c29a4fd3\jopt-simple-4.5.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\lzma\lzma\0.0.1\jar\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\codecjorbis\20101023\jar\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\codecwav\20101023\jar\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\libraryjavasound\20101123\jar\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\librarylwjglopenal\20100824\jar\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.paulscode\soundsystem\20120107\jar\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl\2.9.0\jar\5654d06e61a1bba7ae1e7f5233e1106be64c91cd\lwjgl-2.9.0.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl_util\2.9.0\jar\a778846b64008fc7f48ead2377f034e547991699\lwjgl_util-2.9.0.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\argo\argo\2.25_fixed\jar\751761ce15a3e3aaf3fc75b9f013ff8f7b88a585\argo-2.25_fixed.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.sourceforge.argo\argo\2.25\jar\751761ce15a3e3aaf3fc75b9f013ff8f7b88a585\argo-2.25.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.bouncycastle\bcprov-jdk15on\1.47\jar\b6f5d9926b0afbde9f4dbe3db88c5247be7794bb\bcprov-jdk15on-1.47.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.google.guava\guava\14.0\bundle\67b7be4ee7ba48e4828a42d6d5069761186d4a53\guava-14.0.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.apache.commons\commons-lang3\3.1\jar\905075e6c80f206bbe6cf1e809d2caa69f420c76\commons-lang3-3.1.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\commons-io\commons-io\2.4\jar\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput\2.0.5\jar\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jutils\jutils\1.0.0\jar\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\com.google.code.gson\gson\2.2.2\jar\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\2ba5dcb11048147f1a74eff2deb192c001321f77\lwjgl-platform-2.9.0-natives-linux.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\6621b382cb14cc409b041d8d72829156a87c31aa\lwjgl-platform-2.9.0-natives-osx.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.lwjgl.lwjgl\lwjgl-platform\2.9.0\jar\3f11873dc8e84c854ec7c5a8fd2e869f8aaef764\lwjgl-platform-2.9.0-natives-windows.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\net.java.jinput\jinput-platform\2.0.5\jar\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\artifacts-26\filestore\org.scala-lang\scala-reflect\2.10.2\jar\444ff8e89a81697997ed8a98a4642ba283130249\scala-reflect-2.10.2.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Sean\.gradle\caches\minecraft\net\minecraftforge\forge\1.6.4-9.11.1.964\forge-1.6.4-9.11.1.964-mcp.jar, examining for mod candidates
+2019-02-23 14:46:42 [FINER] [ForgeModLoader] Skipping known library file C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\eclipse\mods\legacyjavafixer-1.0.jar
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2019-02-23 14:46:42 [INFO] [ForgeModLoader] Searching C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\eclipse\mods for mods
+2019-02-23 14:46:42 [FINER] [ForgeModLoader] Skipping already parsed coremod or tweaker legacyjavafixer-1.0.jar
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Examining directory bin for potential mods
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Found an mcmod.info file in directory bin
+2019-02-23 14:46:42 [FINEST] [ForgeModLoader] Recursing into package optifinder
+2019-02-23 14:46:42 [FINEST] [ForgeModLoader] Recursing into package optifinder.core
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Identified an FMLMod type mod optifinder.core.OptiFinder
+2019-02-23 14:46:42 [FINEST] [optifinder] Parsed dependency info : [] [] []
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Examining file launchwrapper-1.8.jar for potential mods
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] The mod container launchwrapper-1.8.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Examining file asm-debug-all-4.1.jar for potential mods
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] The mod container asm-debug-all-4.1.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Examining file scala-library-2.10.2.jar for potential mods
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] The mod container scala-library-2.10.2.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] Examining file scala-compiler-2.10.2.jar for potential mods
+2019-02-23 14:46:42 [FINE] [ForgeModLoader] The mod container scala-compiler-2.10.2.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jopt-simple-4.5.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jopt-simple-4.5.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lzma-0.0.1.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lzma-0.0.1.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file codecjorbis-20101023.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container codecjorbis-20101023.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file codecwav-20101023.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container codecwav-20101023.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file libraryjavasound-20101123.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file librarylwjglopenal-20100824.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container librarylwjglopenal-20100824.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file soundsystem-20120107.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container soundsystem-20120107.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lwjgl-2.9.0.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lwjgl-2.9.0.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lwjgl_util-2.9.0.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lwjgl_util-2.9.0.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file argo-2.25_fixed.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container argo-2.25_fixed.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file argo-2.25.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container argo-2.25.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file bcprov-jdk15on-1.47.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container bcprov-jdk15on-1.47.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file guava-14.0.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container guava-14.0.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file commons-lang3-3.1.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container commons-lang3-3.1.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file commons-io-2.4.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container commons-io-2.4.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jinput-2.0.5.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jinput-2.0.5.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jutils-1.0.0.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jutils-1.0.0.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file gson-2.2.2.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container gson-2.2.2.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lwjgl-platform-2.9.0-natives-linux.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lwjgl-platform-2.9.0-natives-linux.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lwjgl-platform-2.9.0-natives-osx.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lwjgl-platform-2.9.0-natives-osx.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file lwjgl-platform-2.9.0-natives-windows.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container lwjgl-platform-2.9.0-natives-windows.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jinput-platform-2.0.5-natives-linux.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jinput-platform-2.0.5-natives-linux.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jinput-platform-2.0.5-natives-osx.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jinput-platform-2.0.5-natives-osx.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file jinput-platform-2.0.5-natives-windows.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container jinput-platform-2.0.5-natives-windows.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file scala-reflect-2.10.2.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container scala-reflect-2.10.2.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Examining file forge-1.6.4-9.11.1.964-mcp.jar for potential mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] The mod container forge-1.6.4-9.11.1.964-mcp.jar appears to be missing an mcmod.info file
+2019-02-23 14:46:43 [SEVERE] [ForgeModLoader] FML has detected a mod that is using a package name based on 'net.minecraft.src' : net.minecraft.src.Start. This is generally a severe programming error.  There should be no mod code in the minecraft namespace. MOVE YOUR MOD! If you're in eclipse, select your source code and 'refactor' it into a new package. Go on. DO IT NOW!
+2019-02-23 14:46:43 [SEVERE] [ForgeModLoader] FML has detected a mod that is using a package name based on 'net.minecraft.src' : net.minecraft.src.FMLRenderAccessLibrary. This is generally a severe programming error.  There should be no mod code in the minecraft namespace. MOVE YOUR MOD! If you're in eclipse, select your source code and 'refactor' it into a new package. Go on. DO IT NOW!
+2019-02-23 14:46:43 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] Received a system property request ''
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] System property request managing the state of 0 mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Reloading logging properties from C:\Users\Sean\GitHub\optifinder\forge-1.6.4-9.11.1.964-src\eclipse\config\logging.properties
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Reloaded logging properties
+2019-02-23 14:46:43 [FINE] [mcp] Mod Logging channel mcp configured at default level.
+2019-02-23 14:46:43 [INFO] [mcp] Activating mod mcp
+2019-02-23 14:46:43 [FINE] [FML] Mod Logging channel FML configured at default level.
+2019-02-23 14:46:43 [INFO] [FML] Activating mod FML
+2019-02-23 14:46:43 [FINE] [Forge] Mod Logging channel Forge configured at default level.
+2019-02-23 14:46:43 [INFO] [Forge] Activating mod Forge
+2019-02-23 14:46:43 [FINE] [optifinder] Enabling mod optifinder
+2019-02-23 14:46:43 [FINE] [optifinder] Mod Logging channel optifinder configured at default level.
+2019-02-23 14:46:43 [INFO] [optifinder] Activating mod optifinder
+2019-02-23 14:46:43 [WARNING] [OptiFinder] Mod OptiFinder is missing a pack.mcmeta file, things may not work well
+2019-02-23 14:46:43 [INFO] [Minecraft-Client] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OptiFinder
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] Verifying mod requirements are satisfied
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] All mod requirements are satisfied
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] Sorting mods into an ordered list
+2019-02-23 14:46:43 [FINER] [ForgeModLoader] Mod sorting completed successfully
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Mod sorting data
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] 	optifinder(OptiFinder:1.6.4_HD_U_D1): bin ()
+2019-02-23 14:46:43 [FINEST] [mcp] Sending event FMLConstructionEvent to mod mcp
+2019-02-23 14:46:43 [FINEST] [mcp] Sent event FMLConstructionEvent to mod mcp
+2019-02-23 14:46:43 [FINEST] [FML] Sending event FMLConstructionEvent to mod FML
+2019-02-23 14:46:43 [FINEST] [FML] Sent event FMLConstructionEvent to mod FML
+2019-02-23 14:46:43 [FINEST] [Forge] Sending event FMLConstructionEvent to mod Forge
+2019-02-23 14:46:43 [INFO] [ForgeModLoader] Registering Forge Packet Handler
+2019-02-23 14:46:43 [FINEST] [ForgeModLoader] Testing mod Forge to verify it accepts its own version in a remote connection
+2019-02-23 14:46:43 [FINEST] [ForgeModLoader] The mod Forge accepts its own version (9.11.1.964)
+2019-02-23 14:46:43 [INFO] [ForgeModLoader] Succeeded registering Forge Packet Handler
+2019-02-23 14:46:43 [FINEST] [Forge] Sent event FMLConstructionEvent to mod Forge
+2019-02-23 14:46:43 [FINEST] [optifinder] Sending event FMLConstructionEvent to mod optifinder
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into optifinder
+2019-02-23 14:46:43 [FINEST] [optifinder] Sent event FMLConstructionEvent to mod optifinder
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] Mod signature data
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:8.09): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:6.99.19.964): forge-1.6.4-9.11.1.964-mcp.jar (NO VALID CERTIFICATE FOUND)
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:9.11.1.964): forge-1.6.4-9.11.1.964-mcp.jar (NO VALID CERTIFICATE FOUND)
+2019-02-23 14:46:43 [FINE] [ForgeModLoader] 	optifinder(OptiFinder:1.6.4_HD_U_D1): bin (NO VALID CERTIFICATE FOUND)
+2019-02-23 14:46:43 [FINEST] [mcp] Sending event FMLPreInitializationEvent to mod mcp
+2019-02-23 14:46:43 [FINEST] [mcp] Sent event FMLPreInitializationEvent to mod mcp
+2019-02-23 14:46:43 [FINEST] [FML] Sending event FMLPreInitializationEvent to mod FML
+2019-02-23 14:46:43 [FINEST] [FML] Sent event FMLPreInitializationEvent to mod FML
+2019-02-23 14:46:43 [FINEST] [Forge] Sending event FMLPreInitializationEvent to mod Forge
+2019-02-23 14:46:43 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2019-02-23 14:46:43 [FINEST] [Forge] Sent event FMLPreInitializationEvent to mod Forge
+2019-02-23 14:46:43 [FINEST] [optifinder] Sending event FMLPreInitializationEvent to mod optifinder
+2019-02-23 14:46:43 [FINEST] [optifinder] Sent event FMLPreInitializationEvent to mod optifinder
+2019-02-23 14:46:44 [FINEST] [mcp] Sending event FMLInitializationEvent to mod mcp
+2019-02-23 14:46:44 [FINEST] [mcp] Sent event FMLInitializationEvent to mod mcp
+2019-02-23 14:46:44 [FINEST] [FML] Sending event FMLInitializationEvent to mod FML
+2019-02-23 14:46:44 [FINEST] [FML] Sent event FMLInitializationEvent to mod FML
+2019-02-23 14:46:44 [FINEST] [Forge] Sending event FMLInitializationEvent to mod Forge
+2019-02-23 14:46:44 [FINEST] [Forge] Sent event FMLInitializationEvent to mod Forge
+2019-02-23 14:46:44 [FINEST] [optifinder] Sending event FMLInitializationEvent to mod optifinder
+2019-02-23 14:46:44 [INFO] [STDOUT] OptiFine is not installed, exiting.
