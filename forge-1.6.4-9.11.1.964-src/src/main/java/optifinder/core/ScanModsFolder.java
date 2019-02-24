@@ -58,13 +58,13 @@ public class ScanModsFolder {
 	
 	public static void downloader(String version) {
 		try {
-			String page = "https://www.nosiphus.com/minecraft/optifinder/1.6.4.html";
+			String page = "https://www.nosiphus.com/minecraft/mods/optifinder/1.6.4.html";
 			
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 				Desktop.getDesktop().browse(new URI(page));
 			}
 		} catch (IOException e) {
-				e.printStackTrace();
+			e.printStackTrace();
 		} catch (URISyntaxException f) {
 			f.printStackTrace();
 		}
