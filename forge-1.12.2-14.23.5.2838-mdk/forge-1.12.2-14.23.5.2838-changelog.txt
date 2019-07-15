@@ -1,4 +1,90 @@
 Changelog:
+Build 2838:
+	bs2609: Fix vanilla handling of options file (MC-117449, MC-151173) (#5725)
+
+Build 2837:
+	clienthax: Update EnumHelper to be compatible with Eclipse's OpenJ9 JVM. (#5712)
+
+Build 2836:
+	tterrag:
+		Revert "Invalidate tile entities that are queued for removal (#5512)"
+		This reverts commit 75788f63eea6c33ccef7e5cbcab27ad9ad2c2a04.
+		This solution is invalid as TEs are free to modify the world
+		tileEntities list, usually indirectly via chunkloading, from inside
+		invalidate().
+		This happens in vanilla, in TileEntityChest#invalidate, where it calls 
+		checkForAdjacentChests(), which has the potential to load neighboring 
+		chunks and cause a CME.
+		A more sophisticated solution is needed.
+
+Build 2835:
+	bs2609: Fix some vertex format changes not being handled correctly (#5368)
+
+Build 2834:
+	bs2609:
+		Transform vertex normals as well as positions when generating quads
+		(#5242)
+
+Build 2833:
+	rseifert.phone: Fix for SidedInvWrapper isItemValid using wrong slot (#5642)
+
+Build 2832:
+	bs2609: Invalidate tile entities that are queued for removal (#5512)
+
+Build 2831:
+	lclc98: Added Wool to OreDictionary (#5414)
+
+Build 2830:
+	CreativeMD: Fixed boat not taking care of block-liquid hooks (#5086)
+
+Build 2829:
+	bs2609: Add Forge dimension-changing hooks to spectator handling code (#5212)
+
+Build 2828:
+	ichttt:
+		Minor performace improvement when building chunks and rendering blocks
+		(#5286)
+
+Build 2827:
+	bs2609: Catch json parsing errors from constants/factories files (#5258)
+
+Build 2826:
+	bs2609: Allow custom DataSerializers to be registered safely (#5245)
+
+Build 2825:
+	cpw:
+		Try and make 1.13 mods more obviously wrong in 1.12..
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+Build 2824:
+	tterrag: Fix #5651 Re-add canPlaceBlockOnSide check in World#mayPlace
+
+Build 2823:
+	Pokechu022:
+		Fail fast when null is used with setTag instead of crashing in
+		writeEntry (#5257)
+
+Build 2822:
+	tterrag: Fix block placement not checking for player collision
+
+Build 2821:
+	wynprice999: Added more Constants (#5323)
+
+Build 2820:
+	python0429: [1.12.2] Add a few events pertaining to villages (#5302)
+
+Build 2819:
+	Tyler Hancock: [1.12] Fix special spawn event not firing in many cases. (#5389)
+
+Build 2818:
+	bs2609: Only prompt for missing registries on local worlds (#5348)
+
+Build 2817:
+	ckrier.3000: Add EntityPlaceEvent (#5057)
+
+Build 2816:
+	bs2609: Generalise EnumRarity to an interface (#5182)
+
 Build 2815:
 	bs2609: Apply access-level changes to inner class attributes (#5468)
 
