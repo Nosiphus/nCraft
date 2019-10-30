@@ -1,2 +1,2 @@
-# optifinder
-A small Minecraft mod designed to make sure that modpack users install OptiFine.
+# nCraft
+nCraft was our attempt at a custom Minecraft launcher. We don't know if we will return to using this on a regular basis.
