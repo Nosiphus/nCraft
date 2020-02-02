@@ -46,7 +46,7 @@ public class DownloadListener implements ActionListener {
 		
 		System.out.println("Version number is " + version + ".");
 		
-		String fromFile = "https://www.nosiphus.com/minecraft/modpacks/" + modpack + "/updates/" + version + ".txt";
+		String fromFile = "https://ncraft.nosiphus.com/modpacks/" + modpack + "/updates/" + version + ".txt";
 		new File(Launcher.cache + File.separator + modpack + File.separator).mkdirs();
 		String toFile = packfolder + "cache" + File.separator + version + ".txt";
 		
