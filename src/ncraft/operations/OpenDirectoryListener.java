@@ -1,4 +1,4 @@
-package ncraft.core.buttons;
+package ncraft.operations;
 
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
-import ncraft.core.Launcher;
+import ncraft.Launcher;
 
 public class OpenDirectoryListener implements ActionListener {
 

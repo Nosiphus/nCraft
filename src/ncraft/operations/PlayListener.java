@@ -1,5 +1,4 @@
-
-package ncraft.core.buttons;
+package ncraft.operations;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

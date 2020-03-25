@@ -1,4 +1,4 @@
-package ncraft.core;
+package ncraft;
 
 import java.awt.*;
 import java.io.File;
@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 import javax.swing.*;
-import ncraft.core.buttons.*;
+
+import ncraft.operations.*;
 
 public class Launcher {
 	

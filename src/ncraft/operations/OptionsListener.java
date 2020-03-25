@@ -1,4 +1,4 @@
-package ncraft.core.buttons;
+package ncraft.operations;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -15,7 +15,7 @@ import java.util.Properties;
 
 import javax.swing.*;
 
-import ncraft.core.Launcher;
+import ncraft.Launcher;
 
 public class OptionsListener implements ActionListener {
 	

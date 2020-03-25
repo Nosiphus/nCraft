@@ -1,4 +1,4 @@
-package ncraft.core.buttons;
+package ncraft.operations;
 
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
@@ -17,7 +17,7 @@ import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JOptionPane;
 
-import ncraft.core.Launcher;
+import ncraft.Launcher;
 
 public class DownloadListener implements ActionListener {
 
